@@ -13,9 +13,7 @@ def select_sort(A):
             j += 1
 
         # Swap that smallest value with the current index
-        min = A[imin]
-        A[imin] = A[i]
-        A[i] = min
+        A[i], A[imin] = A[imin], A[i]
         
         i += 1
 

@@ -1,7 +1,7 @@
 def select_sort(A):
     length = len(A)
     # Loop throug the list
-    for i in range(0, length):
+    for i in range(0, length - 1):
         # Find the smallest number
         imin = i
         j = i + 1
@@ -15,7 +15,7 @@ def select_sort(A):
         # Swap that smallest value with the current index
         min = A[imin]
         A[imin] = A[i]
-        A[i] = min + 1
+        A[i] = min
         
         i += 1
 
